@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+	<head>
+		<nav>
+			<ul>
+                <h1>Ethan’s Portfolio</h1>
+                <li><a href="#about">o/ Hello!</a></li>
+                <li><a href="#contact">Contact</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="Ethan Armstrong Resume 2023.pdf" target="_blank">Resume</a></li>
+			</ul>
+		</nav>
+		
+        <header>
+            <meta charset="UTF-8">
+            <title>Ethan’s Portfolio</title>
+            <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+            <link rel="stylesheet" href="style.css">
+        </header>
+	</head>
+
+    <section>
+        <img src = "stars.png" id="stars">
+        <!-- <img src = "moon.png" id="moon"> -->
+        <img src = "mountains_behind.png" id="mountains_behind">
+        <!-- <h4 id="text">Night Owl</h4> -->
+        <img src = "mountains_front.png" id="mountains_front">
+    </section>
+    <script>
+        let stars = document.getElementById('stars');
+        // let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let mountains_front = document.getElementById('mountains_front');
+        // let text = document.getElementById('text');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.top = value * 0.3 + 'px';
+            // moon.style.top = value * 0.8 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountains_front.style.top = value * 0 + 'px'
+            // text.style.top = value * 2 + 'px';
+            // text.style.marginTop = value * 0.3 + 'px';
+        })
+    </script>
+
+    <main>
+		<header id="about">
+			<h2>About Me:</h2>
+			<p>Hello! My name is Ethan and this is a landing page for my portfolio! I wanted to add some cool information about myself here, as well as some photos of myself,
+               stuff I've worked on in the past, and my current resume! I'm from Barbados and I'm currently studying Game Design and Programming at George Brown in Toronto, Canada!
+               My goal is to graduate from George Brown and afterwards either go to university to study Computer Science, or continue working to embark on my game developement career.
+            </p>
+        </header>
+
+		<header id="contact">
+			<h2>Contact:</h2>
+			<p>You can reach out to me at: <a href="mailto:ethanarm123@gmail.com">ethanarm123@gmail.com</a>!</p>
+        </header>
+
+        <header>
+        <div class="images">
+            <img src="portfolio5.png" alt="Image 1" width="280" height="300">
+            <img src="portfolio3.png" alt="Image 2" width="280" height="300">
+            <img src="portfolio2.png" alt="Image 3" width="280" height="300">
+            <img src="portfolio4.png" alt="Image 4" width="280" height="300">
+            <img src="portfolio7.png" alt="Image 5" width="280" height="300">
+            <img src="portfolio6.png" alt="Image 6" width="280" height="300">
+            
+        </div>
+        </header>
+
+        <header id="projects">
+            <h2>Project Information:</h2>
+            <video width="800" height="300" autoplay muted loop playsinline>
+                <source src="gogoburger.mp4" type="video/mp4" />
+                <source src="gogoburger.ogg" type="video/ogg" />
+            </video>
+			<h3>Game Title: </h3>
+            <p>Video Source: <a href="https://fast-food-studios.itch.io/gogo-burger-and-the-secret-sauce">Gogo Burger and the Secret Sauce</a> on itch.io</p>
+            
+            <h2>Links:</h2>
+        <div class="images">
+            <img src="portfolio1.png" alt="Image 1" width="620" height="600">
+        </div>
+        <h3>Brand Page </h3>
+        <p><a href="https://brand.page/a-prodigy-project-nightowl">Nightowl Games</a></p>
+        <h3>Personal </h3>
+        <p><a href="https://linktr.ee/bajanprodigy">Linktree</a></p>
+        </header>
+
+	</main>
+    <footer>
+        <h3>Image Source: <a href="https://www.freepik.com/free-vector/mountains-cleft-view-from-bottom-night-scenery-landscape-with-high-rocks-full-moon-with-stars-glowing-peaks_13194970.htm#page=1&query=Scene&position=38">Image by upklyak</a> on Freepik</h3>
+    </footer>
+</body>
+</html>
